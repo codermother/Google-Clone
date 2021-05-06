@@ -1,0 +1,146 @@
+.search-page {
+    width: 100vw;
+}
+
+.searchPage-logo {
+    object-fit: contain;
+    height: 50px;
+    margin-right: 50px;
+}
+
+.searchPage-header {
+    width: 100vw;
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    align-items: flex-start;
+    padding: 30px;
+    border-bottom: 1px solid lightgray;
+}
+
+.searchPage-headerBody > .search > .search-input {
+    margin-top: 0;
+    width: unset;
+    margin: unset;
+    max-width: 700px;
+}
+
+.searchPage-options {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    color: gray;
+    margin-right: 15%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    max-width: 100%;
+}
+
+.searchPage-options::-webkit-scrollbar{
+    display: none;
+}
+
+.searchPage-optionsRight a, .searchPage-optionsLeft a {
+    text-decoration: none;
+    color:gray;
+}
+
+.searchPage-optionsRight, .searchPage-optionsLeft {
+    display: flex;
+}
+
+.searchPage-optionsRight {
+    margin-left: 80px;
+}
+
+.searchPage-option {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.searchPage-option a {
+    margin-left: 5px;
+}
+
+.searchPage-result {
+    margin:  40px 0;;
+}
+
+.searchPage-resultCount {
+    color: #70757a;
+    font-size: 14px;
+}
+
+.searchPage-results {
+    max-width: 650px;
+    margin-top: 20px;
+    margin-left: 240px;
+    margin-bottom: 100px;
+}
+
+.searchPage-resultTitle{
+    text-decoration: none;
+}
+
+.searchPage-resultTitle:hover {
+    text-decoration: underline;
+}
+
+.searchPage-resultTitle >h2 {
+    font-weight: 500;
+}
+
+.searchPage-resultSnippet{
+    margin-top: 10px;
+}
+
+.searchPage_resultImage {
+    object-fit: contain;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+
+@media only screen and (max-width: 950px) {
+
+    .searchPage-header {
+        display: grid;
+    }
+
+    .searchPage-headerBody {
+        max-width: 85%;
+        margin-right: 30px;
+    }  
+
+    .searchPage-logo {
+        margin: 0 30% 10px 30%;
+    }
+
+    .searchPage-option {
+        width: 50%;
+        margin-right: 20px;
+    }
+
+    .searchPage-results {
+        max-width: unset;
+        margin-left: 40px;
+        width: 85vw;
+    }  
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .searchPage-logo {
+        margin: 0 30% 10px 30%;
+    }
+
+    .searchPage-results {
+        max-width: unset;
+        margin-left: 40px;
+        width: 95vw;
+    }   
+}
